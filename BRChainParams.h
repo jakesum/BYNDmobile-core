@@ -47,10 +47,10 @@ typedef struct {
 } BRChainParams;
 
 static const char *BRMainNetDNSSeeds[] = {
-    "dnsseed.sumcoinwallet.org", NULL};
+    "dnsseed.sumcoinpool.org", "dnsseed.sumcoinwallet.org", NULL};
 
 static const char *BRTestNetDNSSeeds[] = {
-    "dnsseed.sumcoinwallet.org", NULL
+    "dnsseed.sumcoinpool.org", "dnsseed.sumcoinwallet.org", NULL
 };
 
 // blockchain checkpoints - these are also used as starting points for partial chain downloads, so they must be at
