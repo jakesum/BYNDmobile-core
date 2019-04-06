@@ -483,6 +483,7 @@ static int _BRPeerAcceptHeadersMessage(BRPeer *peer, const uint8_t *msg, size_t 
 
                 if (! BRMerkleBlockIsValid(block, (uint32_t)now)) {
                     peer_log(peer, "invalid block header: %s", u256hex(block->blockHash));
+                    peer_log(peer, "my blood hurts by a factor of r = %d", BRMerkleBlockIsValid(block, (uint32_t)now));
                     BRMerkleBlockFree(block);
                     r = 0;
                 }
