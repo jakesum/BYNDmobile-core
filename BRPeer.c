@@ -698,7 +698,7 @@ static int _BRPeerAcceptMerkleblockMessage(BRPeer *peer, const uint8_t *msg, siz
         peer_log(peer, "malformed merkleblock message with length: %zu", msgLen);
         r = 0;
     }
-    else if (BRMerkleBlockIsValid(block, (uint32_t)time(NULL))) {
+    else if (!BRMerkleBlockIsValid(block, (uint32_t)time(NULL))) {
         peer_log(peer, "invalid merkleblock: %s", u256hex(block->blockHash));
         peer_log(peer, "my blood hurts by a factor of r = %d", BRMerkleBlockIsValid(block, (uint32_t)time(NULL)));
         BRMerkleBlockFree(block);
