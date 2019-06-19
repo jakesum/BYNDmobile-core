@@ -41,7 +41,7 @@ typedef struct {
     uint16_t standardPort;
     uint32_t magicNumber;
     uint64_t services;
-    int (*verifyDifficulty)(const BRMerkleBlock *block, const BRSet *blockSet); // blockSet must have last 2016 blocks
+    int (*verifyDifficulty)(const BRMerkleBlock *block, const BRSet *blockSet); // blockSet must have last 2880 blocks
     const BRCheckPoint *checkpoints;
     size_t checkpointsCount;
 } BRChainParams;
@@ -62,7 +62,14 @@ static const BRCheckPoint BRMainNetCheckpoints[] = {
     {   8640, uint256("19c100388b8a8bc0230f43c4355733e2b3375e08f1667449678ec14f66174aae"), 1554685252, 0x1e01071f },
     {  11520, uint256("0fcc3eacab1e532325f1c5bde0372b78e999a504a8eaaf3d4628038de6735d30"), 1554722824, 0x1d727780 },
     {  14400, uint256("6b55672438b707c59c95e7681a9914c4d201d2cdf5f42d902d53ed23042e028a"), 1554754827, 0x1d2a6421 },
-    {  17280, uint256("23886b646dc4601c788cf0014924ea3d9403534a724285327be63db5ea390123"), 1554791948, 0x1d123584 }
+    {  17280, uint256("23886b646dc4601c788cf0014924ea3d9403534a724285327be63db5ea390123"), 1554791948, 0x1d123584 },
+    {  57600, uint256("edbe7a9e2e20c8c12fea25dc9be9268bfa308145fa68d2d2ce54dc405cf12e76"), 1555612735, 0x1c01a52a },
+    {  86400, uint256("8989bab14675dc54c64f287957d624ad8c057a2fb4f200d038f7862d8f5fa76d"), 1556457190, 0x1c0145da },
+    { 115200, uint256("e386f62c30a46f6b565ffc8a3fdf73e5e76e9f2f400d5cba1911e7732b52bd8d"), 1557312544, 0x1c012412 },
+    { 144000, uint256("210da711b7a617fbf3ae0893935973ff60a17e21e0a396224eb553c0439311d5"), 1558174688, 0x1c011ae1 },
+    { 172800, uint256("341f603628dbe328512d9507066241d9fcc4c81ac91dd9bc87e2184ed5787b80"), 1559034517, 0x1c0104c5 },
+    { 201600, uint256("6bbde0a86b6e1efa71333bb3636f02931ebb872157b48c674efde25054a571b3"), 1559895468, 0x1c00dd37 },
+    { 216000, uint256("7f1d6d0c386cc6a6d5eb85877adb039d7747c6047d84e311b7213bf237c78b7c"), 1560306060, 0x1c00a311 }
 
 
 };
