@@ -47,10 +47,12 @@ typedef struct {
 } BRChainParams;
 
 static const char *BRMainNetDNSSeeds[] = {
-    "dnsseed.sumcoinpool.org", "dnsseed.sumcoinwallet.org", NULL};
+    "dnsseed.sumcoinpool.org", "dnsseed.sumcoinwallet.org", "dnsseed.sumnode.io", "dnsseed.sumcoin.org",
+    "dnsseed.sumcoinmining.org" NULL};
 
 static const char *BRTestNetDNSSeeds[] = {
-    "dnsseed.sumcoinpool.org", "dnsseed.sumcoinwallet.org", NULL
+    "dnsseed.sumcoinpool.org", "dnsseed.sumcoinwallet.org", "dnsseed.sumnode.io", "dnsseed.sumcoin.org",
+    "dnsseed.sumcoinmining.org" NULL
 };
 
 // blockchain checkpoints - these are also used as starting points for partial chain downloads, so they must be at
@@ -76,7 +78,10 @@ static const BRCheckPoint BRMainNetCheckpoints[] = {
     { 273600, uint256("2aff5d7931a37d16ed1cbb1e81ad1b5f4cb357be5d844d5f9a7f3ebea956aa1a"), 1562044711, 0x1c009d96 },
     { 280800, uint256("a0e895c7972d1aa031e4154b59472267d14c34ef5d7067b80a89f5f102e688e4"), 1562261715, 0x1c00a4ba },
     { 283680, uint256("8858031b1cee059a036f3075566a93c6e2ff425854f551dad377a07c21698cc4"), 1562332721, 0x1c0095c6 },
-    { 286560, uint256("cb9fac6220ec62ba195dad103ec030df11735bc741d8697a331b9a05bbcab156"), 1562394830, 0x1b68c052 }
+    { 286560, uint256("cb9fac6220ec62ba195dad103ec030df11735bc741d8697a331b9a05bbcab156"), 1562394830, 0x1b68c052 },
+    { 315360, uint256("f963b0f0c2f1a217c1f5f3da0ad0efc0d0715397ceb1259023aa809317a97827"), 1563318882, 0x1c00948c },
+    { 344160, uint256("d6d5348e4777bff49e6fa98a10b63f3191afec39103609e85668508b806a0ff1"), 1564192191, 0x1c00a930 },
+    { 372960, uint256("de350113ba6a8b8fdc2496f7527dd64cc79da560dd54d72a4cdffad2112f0da6"), 1565057466, 0x1c009df1 }
 
 
 };
