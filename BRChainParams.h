@@ -48,11 +48,11 @@ typedef struct {
 
 static const char *BRMainNetDNSSeeds[] = {
     "dnsseed.sumcoinpool.org", "dnsseed.sumexplorer.com", "dnsseed.sumcoinwallet.org", "dnsseed.sumnode.io", 
-    "dnsseed.sumcoin.org", "dnsseed.sumcoinmining.org", "sumdnsseed.moonypool.com" NULL};
+    "dnsseed.sumcoin.org", "dnsseed.sumcoinmining.org", "sumdnsseed.moonypool.com" };
 
 static const char *BRTestNetDNSSeeds[] = {
     "dnsseed.sumcoinpool.org", "dnsseed.sumexplorer.com", "dnsseed.sumcoinwallet.org", "dnsseed.sumnode.io", 
-    "dnsseed.sumcoin.org", "dnsseed.sumcoinmining.org" NULL
+    "dnsseed.sumcoin.org", "dnsseed.sumcoinmining.org" 
 };
 
 // blockchain checkpoints - these are also used as starting points for partial chain downloads, so they must be at
