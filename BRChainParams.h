@@ -48,7 +48,8 @@ typedef struct {
 
 static const char *BRMainNetDNSSeeds[] = {
     "dnsseed.sumcoinpool.org", "dnsseed.sumexplorer.com", "dnsseed.sumcoinwallet.org", "dnsseed.sumnode.io", 
-    "dnsseed.sumcoin.org", "dnsseed.sumcoinmining.org", "sumdnsseed.moonypool.com", "dnsseed.sumfaucet.co" };
+    "dnsseed.sumcoin.org", "dnsseed.sumcoinmining.org", "sumdnsseed.moonypool.com", "dnsseed.sumfaucet.co", 
+    "dnsseed.minesum.com" };
 
 static const char *BRTestNetDNSSeeds[] = {
     "dnsseed.sumcoinpool.org", "dnsseed.sumexplorer.com", "dnsseed.sumcoinwallet.org", "dnsseed.sumnode.io", 
