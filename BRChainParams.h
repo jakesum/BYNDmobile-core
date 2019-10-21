@@ -47,13 +47,12 @@ typedef struct {
 } BRChainParams;
 
 static const char *BRMainNetDNSSeeds[] = {
-    "dnsseed.sumcoinpool.org", "dnsseed.sumexplorer.com", "dnsseed.sumcoinwallet.org", "dnsseed.sumnode.io", 
-    "dnsseed.sumcoin.org", "dnsseed.sumcoinmining.org", "sumdnsseed.moonypool.com", "dnsseed.sumfaucet.co", 
-    "dnsseed.minesum.com" };
+    "dnsseed.sumcoinpool.org", "dnsseed.sumnode.io", "dnsseed.sumcoin.org", "dnsseed.sumcoinmining.org", 
+    "sumdnsseed.moonypool.com", "dnsseed.sumfaucet.co", "dnsseed.minesum.com", "dnsseed.sumexplorer.com" };
 
 static const char *BRTestNetDNSSeeds[] = {
-    "dnsseed.sumcoinpool.org", "dnsseed.sumexplorer.com", "dnsseed.sumcoinwallet.org", "dnsseed.sumnode.io", 
-    "dnsseed.sumcoin.org", "dnsseed.sumcoinmining.org", "sumdnsseed.moonypool.com", "dnsseed.sumfaucet.co" };
+    "dnsseed.sumcoinpool.org", "dnsseed.sumnode.io", "dnsseed.sumcoin.org", "dnsseed.sumcoinmining.org", 
+    "sumdnsseed.moonypool.com", "dnsseed.sumfaucet.co", "dnsseed.minesum.com", "dnsseed.sumexplorer.com" };
 
 // blockchain checkpoints - these are also used as starting points for partial chain downloads, so they must be at
 // difficulty transition boundaries in order to verify the block difficulty at the immediately following transition
@@ -90,10 +89,11 @@ static const BRCheckPoint BRMainNetCheckpoints[] = {
     { 529920, uint256("be82c887af163c8c3a117497cfa909113067e25a8258b6644684c28d28ff1fdd"), 1569797529, 0x1c0097d6 },
     { 544320, uint256("3687c221709bd7c1c0848097df91cf6b1ff413e352e4f65e1ced6f4c94e07ec7"), 1570246872, 0x1c00b7a9 },
     { 558720, uint256("25ed1e5a99938e5fd2503c4be4a435d7d582387f0d07587f5fccf03f7244282a"), 1570674328, 0x1c00ad20 },
-    { 573120, uint256("7eefb09f6c5ad6874352b4c089d0dd8e9cf34b4d2537bcbef6bd0ea70a065998"), 1571109642, 0x1c00b255 }
+    { 573120, uint256("7eefb09f6c5ad6874352b4c089d0dd8e9cf34b4d2537bcbef6bd0ea70a065998"), 1571109642, 0x1c00b255 },
+    { 587520, uint256("5952411159da3f15c29795673730166b1adb6d66e4abe681c1b6ea994589cb6b"), 1571553616, 0x1c00cc2d }
 
-        //{587520
         //{601920
+        //{616320
 };
 
 static const BRCheckPoint BRTestNetCheckpoints[] = {
