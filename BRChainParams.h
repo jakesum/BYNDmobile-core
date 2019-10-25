@@ -47,12 +47,12 @@ typedef struct {
 } BRChainParams;
 
 static const char *BRMainNetDNSSeeds[] = {
-    "dnsseed.sumcoinpool.org", "dnsseed.sumnode.io", "dnsseed.sumcoin.org", "dnsseed.sumcoinmining.org", 
-    "sumdnsseed.moonypool.com", "dnsseed.sumfaucet.co", "dnsseed.minesum.com", "dnsseed.sumexplorer.com" };
+    "dnsseed.sumcoinpool.org", "dnsseed.sumnode.io", "dnsseed.sumcoinmining.org", 
+    "sumdnsseed.moonypool.com", "dnsseed.sumfaucet.co", "dnsseed.minesum.com" };
 
 static const char *BRTestNetDNSSeeds[] = {
-    "dnsseed.sumcoinpool.org", "dnsseed.sumnode.io", "dnsseed.sumcoin.org", "dnsseed.sumcoinmining.org", 
-    "sumdnsseed.moonypool.com", "dnsseed.sumfaucet.co", "dnsseed.minesum.com", "dnsseed.sumexplorer.com" };
+    "dnsseed.sumcoinpool.org", "dnsseed.sumnode.io", "dnsseed.sumcoinmining.org", 
+    "sumdnsseed.moonypool.com", "dnsseed.sumfaucet.co", "dnsseed.minesum.com" };
 
 // blockchain checkpoints - these are also used as starting points for partial chain downloads, so they must be at
 // difficulty transition boundaries in order to verify the block difficulty at the immediately following transition
