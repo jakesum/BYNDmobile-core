@@ -41,7 +41,7 @@ typedef struct {
     uint16_t standardPort;
     uint32_t magicNumber;
     uint64_t services;
-    int (*verifyDifficulty)(const BRMerkleBlock *block, const BRSet *blockSet); // blockSet must have last 2880 blocks
+    int (*verifyDifficulty)(const BRMerkleBlock *block, const BRSet *blockSet); // blockSet must have last 2016 blocks
     const BRCheckPoint *checkpoints;
     size_t checkpointsCount;
 } BRChainParams;
