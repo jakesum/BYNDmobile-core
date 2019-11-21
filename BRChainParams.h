@@ -47,8 +47,7 @@ typedef struct {
 } BRChainParams;
 
 static const char *BRMainNetDNSSeeds[] = {
-    "dnsseed.beyondcoin.io", "bynd-main-dns1.beyondcoin.io", "bynd-main-dns2.beyondcoin.io", "bynd-main-dns3.beyondcoin.io",
-     "na1.beyondcoin.io", "eu.byndnode.io", "na1.byndnode.io" };
+    "dnsseed.beyondcoin.io", "dnsseed.byndnode.com" };
 
 static const char *BRTestNetDNSSeeds[] = {
     "testnet-seed.beyonddata.llc", "bynd-test-dns1.beyonddata.llc" };
